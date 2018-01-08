@@ -1,1 +1,0 @@
-from .pybin import StructFile
