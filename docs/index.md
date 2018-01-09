@@ -1,4 +1,4 @@
-# pystrct
+# Getting Started
 A binary file's manager in Python 3.
 
 *pystrct* creates and manages a binary file using Python's *Struct*.
@@ -19,4 +19,3 @@ n1 = file.get(4)                       # get the 4th number on file
 n2 = file.next()                       # get the 5th number
 ```
 
-## Docs and stuff
