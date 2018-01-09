@@ -1,10 +1,9 @@
 # pystrct's API
 
-## The Class
 *class* pystrct.**StructFile**(*filepath, fmt*)
     Return a StructFile object
 
-- **filepath**: *string*\
+- **filepath**: *string*\\
     A path to a binary file.
 
 - **fmt**: *string*\
