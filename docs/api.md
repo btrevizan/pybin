@@ -19,44 +19,63 @@ Struct's format. To know how to create a format, see the
 Return a *list* of the next *n* elements on file according to *tell*. If n is 1, return the element itself.
 - **n**: *int (default 1)*
 
-    Number of elements.
+Number of elements.
 ---
-**prev**(*n*)\
+**prev**(*n*)
+
 Return a *list* of the previous *n* elements on file according to *tell*. If n is 1, return the element itself.
-- **n**: *int (default 1)*\
-    Number of elements.
+
+- **n**: *int (default 1)*
+
+Number of elements.
 ---
-**get**(*i, n*)\
+**get**(*i, n*)
+
 Return a *list* of the *n* elements starting from the *ith* element. If n is 1, return the element itself.
-- **i**: *int*\
-    Start position.
-- **n**: *int (default 1)*\
-    Number of elements from start.
+
+- **i**: *int*
+
+Start position.
+
+- **n**: *int (default 1)*
+
+Number of elements from start.
 ---
-**last**()\
+**last**()
+
 Return the last element on the end of file.
 ---
-**append**(*value*):
+**append**(*value*)
 Append a *value* in file.
-- **value**: *tuple*\
-    Value to be apendded. The tuple must follow the struct *format* defined.
+- **value**: *tuple*
+
+Value to be apendded. The tuple must follow the struct *format* defined.
 ---
-**write**(i, value):
+**write**(i, value)
+
 Write/overwrite a *value* in the *ith* position in file.
-- **i**: *int*\
-    Index in file.
-- **value**: *tuple*\
-    Value to be written. The tuple must follow the struct *format* defined.
+
+- **i**: *int*
+
+Index in file.
+
+- **value**: *tuple*
+
+Value to be written. The tuple must follow the struct *format* defined.
 ---
-**truncate**(n)\
+**truncate**(n)
+
 Erase the last *n* elements.
 
 ### Properties
-**size**: *int*\
+**size**: *int*
+
 Return the file size in bytes.
 ---
-**tell**: *int*\
+**tell**: *int*
+
 Return the file pointer's position as an index.
 ---
-**length**: *int*\
+**length**: *int*
+
 Return the total elements in file.
