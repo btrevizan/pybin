@@ -1,6 +1,7 @@
 # pystrct's API
 
 *class* pystrct.**StructFile**(*filepath, fmt*)
+
 Return a StructFile object.
 
 - **filepath**: *string*
@@ -13,9 +14,11 @@ Struct's format. To know how to create a format, see the
 [Python 3 Struct's documentation](https://docs.python.org/3/library/struct.html#format-characters).
 
 ### Methods
-**next**(*n*)\
+**next**(*n*)
+
 Return a *list* of the next *n* elements on file according to *tell*. If n is 1, return the element itself.
-- **n**: *int (default 1)*\
+- **n**: *int (default 1)*
+
     Number of elements.
 ---
 **prev**(*n*)\
