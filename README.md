@@ -1,4 +1,6 @@
 # pystrct
+[![docs](https://readthedocs.org/projects/pystrct/badge/?version=latest)](http://pystrct.readthedocs.io/en/latest/?badge=latest)
+
 A binary file's manager in Python 3.
 
 *pystrct* creates and manages a binary file using Python's *Struct*.
