@@ -1,92 +1,46 @@
 # pystrct's API
 
-*class*  pystrct.**StructFile**(*filepath, fmt*)
+*class*  pystrct.**StructFile**(*filepath, fmt*): return a StructFile object.
 
-Return a StructFile object.
-
-- **filepath**: *string*
-
-A path to a binary file.
-
-- **fmt**: *string*
-
-Struct's format. To know how to create a format, see the
+- *string* **filepath**: a path to a binary file.
+- *string* **fmt**: Struct's format. To know how to create a format, see the
 [Python 3 Struct's documentation](https://docs.python.org/3/library/struct.html#format-characters).
 
 ### Methods
-**next**(*n*)
+*list/tuple/object* **next**(*n*): return a *list* of the next *n* elements on file according to *tell*.
+If n is 1, return the element itself.
 
-Return a *list* of the next *n* elements on file according to *tell*. If n is 1, return the element itself.
-
-- **n**: *int (default 1)*
-
-Number of elements.
-
+- *int* **n**: number of elements *(default 1)*.
 ---
-**prev**(*n*)
+*list/tuple/object* **prev**(*n*): return a *list* of the previous *n* elements on file according to *tell*.
+If n is 1, return the element itself.
 
-Return a *list* of the previous *n* elements on file according to *tell*. If n is 1, return the element itself.
-
-- **n**: *int (default 1)*
-
-Number of elements.
-
+- *int* **n**: number of elements *(default 1)*.
 ---
-**get**(*i, n*)
+*list/tuple/object* **get**(*i, n*): return a *list* of the *n* elements starting from the *ith* element.
+If n is 1, return the element itself.
 
-Return a *list* of the *n* elements starting from the *ith* element. If n is 1, return the element itself.
-
-- **i**: *int*
-
-Start position.
-
-- **n**: *int (default 1)*
-
-Number of elements from start.
-
+- *int* **i**: start position.
+- *int* **n**: number of elements from start *(default 1)*.
 ---
-**last**()
-
-Return the last element on the end of file.
-
+*tuple/object* **last**(): return the last element on the end of file.
 ---
-**append**(*value*)
+**append**(*value*): append a *value* in file.
 
-Append a *value* in file.
-
-- **value**: *tuple*
-
-Value to be appended. The tuple must follow the struct *format* defined.
-
+- *tuple* **value**: value to be appended. The tuple must follow the struct *format* defined.
 ---
-**write**(i, value)
+**write**(i, value): write/overwrite a *value* in the *ith* position in file.
 
-Write/overwrite a *value* in the *ith* position in file.
-
-- **i**: *int*
-
-Index in file.
-
-- **value**: *tuple*
-
-Value to be written. The tuple must follow the struct *format* defined.
-
+- *int* **i**: index in file.
+- *tuple* **value**: value to be written. The tuple must follow the struct *format* defined.
 ---
-**truncate**(n)
-
-Erase the last *n* elements.
+**truncate**(n): erase the last *n* elements.
 
 ### Properties
-**size**: *int*
-
-Return the file size in bytes.
+*int* **size**: file size in bytes.
 
 ---
-**tell**: *int*
-
-Return the file pointer's position as an index.
+*int* **tell**: file pointer's position as an index.
 
 ---
-**length**: *int*
-
-Return the total elements in file.
+*int* **length**: total elements in file.
