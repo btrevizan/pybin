@@ -1,6 +1,6 @@
 # pystrct's API
 
-*class* pystrct.**StructFile**(*filepath, fmt*)
+*class*  pystrct.**StructFile**(*filepath, fmt*)
 
 Return a StructFile object.
 
@@ -17,6 +17,7 @@ Struct's format. To know how to create a format, see the
 **next**(*n*)
 
 Return a *list* of the next *n* elements on file according to *tell*. If n is 1, return the element itself.
+
 - **n**: *int (default 1)*
 
 Number of elements.
@@ -55,7 +56,7 @@ Append a *value* in file.
 
 - **value**: *tuple*
 
-Value to be apendded. The tuple must follow the struct *format* defined.
+Value to be appended. The tuple must follow the struct *format* defined.
 
 ---
 **write**(i, value)
