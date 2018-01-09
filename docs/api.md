@@ -1,13 +1,14 @@
 # pystrct's API
 
 *class* pystrct.**StructFile**(*filepath, fmt*)
+Return a StructFile object.
 
-Return a StructFile object
+- **filepath**: *string*
 
-- **filepath**: *string*\
 A path to a binary file.
 
-- **fmt**: *string*\
+- **fmt**: *string*
+
 Struct's format. To know how to create a format, see the
 [Python 3 Struct's documentation](https://docs.python.org/3/library/struct.html#format-characters).
 
