@@ -20,4 +20,4 @@ n2 = file.next()                       # get the 5th number
 ```
 
 ## Docs and stuff
-http://pystrct.readthedocs.io/en/latest/
+You can find docs, api and examples in [here](http://pystrct.readthedocs.io/en/latest/).
