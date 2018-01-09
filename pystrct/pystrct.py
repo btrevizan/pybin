@@ -207,12 +207,7 @@ class StructFile():
         self.__file.write(data)
 
     def truncate(self, n):
-        """Erase data to [size] bytes.
-
-        Keyword arguments:
-            size -- how much data should be removed in bytes.
-                    When (default None), the file is erased until the end.
-        """
+        """Erase [n] elements."""
         # Current byte position - (n * data_size)
         size = self.size - n * self.__strct.size
 
